@@ -49,19 +49,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add the event listener to any mark 
   document.getElementById("BMW").addEventListener("click", () => {
-    window.location.href = "/src/Collection/index.html?marque=BMW"
+    window.location.href = "../../src/Collection/index.html?marque=BMW"
   });
 
   document.getElementById("Lexus").addEventListener("click", () => {
-    window.location.href = "/src/Collection/index.html?marque=Lexus";
+    window.location.href = "../../src/Collection/index.html?marque=Lexus";
   });
 
   document.getElementById("Toyota").addEventListener("click", () => {
-    window.location.href = "/src/Collection/index.html?marque=Toyota";
+    window.location.href = "../../src/Collection/index.html?marque=Toyota";
   });
 
   document.getElementById("Rolls_royce").addEventListener("click", () => {
-    window.location.href = "/src/Collection/index.html?marque=Rolls_royce";
+    window.location.href = "../../src/Collection/index.html?marque=Rolls_royce";
   });
 
 })
