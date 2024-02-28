@@ -32,7 +32,17 @@
                 </div>
             </div>
 
-            <div class="bg-primary rounded-md pt-2 pb-2 pl-5 pr-5 text-white hover:bg-blue-950 transition-colors duration-200 ease-in-out"><a href="../Login/index.html"><p>Login</p></a></div>
+            <div class="flex flex-row justify-center items-center">
+                <?php
+                    if(isset($_COOKIE['LOGGED_USER'])) {
+                        $logged_user_surname = $_COOKIE['LOGGED_USER'];
+                        echo '<div>Hello,' . " " . $logged_user_surname . "!</div>";
+                        echo '<div class="ml-16"> <a href=""><p>Log Out</p></a> </div>';
+                    } else {
+                        echo '<div class="bg-primary rounded-md pt-2 pb-2 pl-5 pr-5 text-white hover:bg-blue-950 transition-colors duration-200 ease-in-out"><a href="../Login/index.html"><p>Login</p></a></div>';
+                    }
+                ?>
+            </div>
 
         </header>
 
